@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tip Calculator</title>
+  </head>
+  <body>
+    <div id="bigBox">
+      <h1>TIP CALCULATOR</h1>
+      <form id="innerBox">
+        <div class="boxes">
+          <p>Hur stor var notan?</p>
+          <div class="field">
+            <label class="button">Kr</label>
+            <input type="text" id="kostnad" />
+          </div>
+        </div>
+
+        <div class="boxes">
+          <p>Hur många personer delar notan?</p>
+          <div class="field">
+            <label class="button">#</label>
+            <input type="text" id="antal" />
+          </div>
+        </div>
+
+        <div class="boxes">
+          <p>Välj hur mycket dricks ni vill lämna:</p>
+          <div class="field">
+            <select name="" id="procent">
+              <option value="false">Välj...</option>
+              <option value="5%">5%</option>
+              <option value="10%">10%</option>
+              <option value="15%">15%</option>
+              <option value="20%">20%</option>
+            </select>
+          </div>
+        </div>
+        <button id="summera">Beräkna!</button>
+        <Input type="text" id="summa" disabled></input>
+      </form>
+    </div>
+    <script src="./app.js" ;></script>
+  </body>
+</html>
