@@ -22,8 +22,14 @@ function procentOmvandlare() {
   }
 }
 
-sumButton.addEventListener("click", (element) => {
-  sumOutput.value = eval;
-});
+sumButton.addEventListener("click", onSumButtonPressed);
 
-console.log();
+function onSumButtonPressed(event) {
+  let tipPercent = procentInput.value.slice(0, -1) / 100 + 1;
+  let sum = (krInput.value / antalInput.value) * tipPercent;
+
+  // 5 -> 1.05
+
+  sumOutput.value = Math.round((sum + Number.EPSILON) * 100) / 100;
+  event.preventDefault();
+}
